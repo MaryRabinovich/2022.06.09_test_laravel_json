@@ -13,7 +13,7 @@ class DeployJsonRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,10 @@ class DeployJsonRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'json'       => 'required|json',
+            'depth'      => 'sometimes|integer',
+            'background' => 'sometimes|string',
+            'color'      => 'sometimes|string'
         ];
     }
 }
