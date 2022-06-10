@@ -7,6 +7,10 @@
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
     </head>
     <body>
-        <x-deploy-json :request="$request"></x-deploy-json>
+
+        <x-deploy-json-container 
+            :request="$request">
+        </x-deploy-json-container>
+        
     </body>
 </html>

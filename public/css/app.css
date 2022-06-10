@@ -19,6 +19,7 @@ details summary {
 }
 
 .deploy_json {
+    font-weight: bold;
     padding: 1rem;
     position: relative;
     min-height: 95vh;
@@ -34,15 +35,8 @@ details summary {
     right: 0;
 }
 
-.deploy_json__content {
-    font-weight: bold;
-}
-
-.deploy_json__ending {
+.deploy_json__line {
     margin-bottom: 1rem;
-}
-
-.deploy_json__ending span {
-    text-decoration: underline;
+    padding-left: 1.5rem;
 }
 
